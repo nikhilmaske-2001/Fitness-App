@@ -18,7 +18,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
     const handleSearch = async () => {
         if (search) {
-            const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/', exercisesOptions);
+            const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exercisesOptions);
 
             // search the input keyword in name, target, equipement and bodyPart DB
             // This will increase the search quality
