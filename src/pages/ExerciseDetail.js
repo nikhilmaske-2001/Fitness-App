@@ -29,6 +29,7 @@ const ExerciseDetail = () => {
 
             const targetMuscleExercisesData = await fetchData(`${exerciseDburl}/exercises/target/${exerciseDetailData.target}`, exercisesOptions);
             setTargetMuscleExercises(targetMuscleExercisesData);
+
             const equipmentExercisesData = await fetchData(`${exerciseDburl}/exercises/equipment/${exerciseDetailData.equipment}`, exercisesOptions);
             setEquipmentExercises(equipmentExercisesData);
         }
